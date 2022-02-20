@@ -259,6 +259,7 @@ margin-left: auto;
 .contact-mail:focus {
   color: var(--accent-color);
 }
+
 .modal-btn {
   display: inline-block;
   padding: 10px 32px;
@@ -305,10 +306,18 @@ color:var(--secondary-text-color-theme-dark);
 }
 
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
   background-color: var(--primary-hero-color);
+  background-image: url(../images/herophoto.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .commands {
@@ -414,3 +423,12 @@ color: var(--primary-text-color-theme-dark);
  background: var(--secondary-text-color-theme-dark);
 border: 1px solid var(--secondary-cell-color);
 }
+.item ::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:var(--primary-about-commanda) ;
+  }
